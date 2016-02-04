@@ -1,0 +1,19 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE SPIL_GetAllLossTypeCode
+	
+AS
+BEGIN
+	
+	
+	--SET NOCOUNT ON;
+  SELECT     TBIL_LIFE_CODES.*
+FROM         TBIL_LIFE_CODES 
+where Tbil_cod_tab_id='L01' and tbil_cod_typ='010' 
+  
+END
+GO
